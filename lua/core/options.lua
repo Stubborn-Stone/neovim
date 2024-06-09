@@ -5,10 +5,15 @@ opt.relativenumber = true
 opt.number = true
 
 -- 缩进
-opt.tabstop = 2
-opt.shiftwidth = 2
+opt.tabstop = 4
+opt.shiftwidth = 4
 opt.expandtab = true
 opt.autoindent = true
+vim.cmd[[
+set listchars=tab:▸\ ,trail:⋅,extends:❯,precedes:❮
+set list
+]]
+
 
 -- 防止包裹
 opt.wrap = false

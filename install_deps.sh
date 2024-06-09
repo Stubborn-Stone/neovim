@@ -109,20 +109,24 @@ install_pacman() {
 install_apt() {
     export DEBIAN_FRONTEND=noninteractive
     apt update
+    apt-get install -y vim
     apt-get install -y ripgrep || true
     apt-get install -y fzf || true
     apt-get install -y cmake
     apt-get install -y make
     apt-get install -y git
     apt-get install -y gcc
-    apt-get install -y python
     apt-get install -y curl
     apt-get install -y clangd || true
     apt-get install -y nodejs || true
     apt-get install -y npm || true
-    python3 -m pip install pyright || true
-    python3 -m pip install cmake-language-server || true
-    python3 -m pip install pynvim || true
+    apt-get install -y python3
+    apt-get install -y pipx
+    apt-get install -y python3-pip
+    apt-get install -y python3-venv
+    pipx install pyright || true
+    pipx install cmake-language-server || true
+    #pipx install pynvim || true
 }
 
 install_yum() {

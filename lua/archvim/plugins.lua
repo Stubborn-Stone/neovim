@@ -9,6 +9,9 @@ local plugins = {
     },
     {
         'nvim-tree/nvim-web-devicons',
+        --require = {
+            --"nvim-tree/nvim-web-devicons"
+        --}
         config = function()
             if os.getenv('NERD_FONTS') ~= nil then
                 require'nvim-tree.renderer.components.icons'.devicons = require "nvim-web-devicons"
@@ -354,6 +357,9 @@ local plugins = {
     },
     {
         'nvim-tree/nvim-tree.lua',
+        --require = {
+            --'nvim-tree/nvim-web-devicons'
+        --},
         config = function() require'archvim/config/nvim-tree' end,
     },
 

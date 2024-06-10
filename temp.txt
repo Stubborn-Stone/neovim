@@ -1,0 +1,36 @@
+10时23分02秒 msg_show 处理 /home/topeet/.config/nvim/init.vim 时发生错误:
+第    3 行:
+E5108: Error executing lua vim/_editor.lua:341: /home/topeet/.config/nvim/init.vim[3]..nvim_exec2() called at /home/topeet/.config/nvim/init.vim:3: Vim(colorscheme):E185: 找不到配色方案 'gruvbox'
+stack traceback:
+	[C]: in function 'nvim_exec2'
+	vim/_editor.lua:341: in function 'cmd'
+	/home/topeet/.config/nvim/lua/archvim/options.lua:64: in main chunk
+	[C]: in function 'require'
+	/home/topeet/.config/nvim/lua/archvim/init.lua:5: in main chunk
+	[C]: in function 'require'
+	[string ":lua"]:1: in main chunk
+[packer.nvim] [ERROR 10:22:05] async.lua:20: Error in coroutine: vim/_editor.lua:341: nvim_exec2()../home/topeet/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects/plugin/nvim-treesitter-textobjects.vim, line 3: Vim(lua):E5108: Error executing lua ...eesitter-textobjects/lua/nvim-treesitter-textobjects.lua:1: module 'nvim-treesitter.configs' not found:
+^Ino field package.preload['nvim-treesitter.configs']
+^Ino file './nvim-treesitter/configs.lua'
+^Ino file '/usr/share/luajit-2.1/nvim-treesitter/configs.lua'
+^Ino file '/usr/local/share/lua/5.1/nvim-treesitter/configs.lua'
+^Ino file '/usr/local/share/lua/5.1/nvim-treesitter/configs/init.lua'
+^Ino file '/usr/share/lua/5.1/nvim-treesitter/configs.lua'
+^Ino file '/usr/share/lua/5.1/nvim-treesitter/configs/init.lua'
+^Ino file './nvim-treesitter/configs.so'
+^Ino file '/usr/local/lib/lua/5.1/nvim-treesitter/configs.so'
+^Ino file '/usr/lib/x86_64-linux-gnu/lua/5.1/nvim-treesitter/configs.so'
+^Ino file '/usr/local/lib/lua/5.1/loadall.so'
+^Ino file './nvim-treesitter.so'
+^Ino file '/usr/local/lib/lua/5.1/nvim-treesitter.so'
+^Ino file '/usr/lib/x86_64-linux-gnu/lua/5.1/nvim-treesitter.so'
+^Ino file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+^I[C]: in function 'require'
+^I...eesitter-textobjects/lua/nvim-treesitter-textobjects.lua:1: in main chunk
+^I[C]: in function 'require'
+^I[string ":lua"]:1: in main chunk
+^I[C]: in function 'resume'
+^I.../site/pack/packer/start/packer.nvim/lua/packer/async.lua:12: in function <.../site/pack/packer/start/packer.nvim/lua/packer/async.lua:11>
+[packer.nvim] [ERROR 10:22:37] async.lua:20: Error in coroutine: vim/_editor.lua:341: nvim_exec2(): Vim:E492: 不是编辑器的命令: MasonUpdate
+[packer.nvim] [WARN  10:23:02] jobs.lua:94: Killing git due to timeout!

@@ -12,7 +12,6 @@
 --     end
 --     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 -- end
-
 local function is_quickfix_open()
   for _, win in ipairs(vim.api.nvim_list_wins()) do
     if vim.api.nvim_buf_get_option(vim.api.nvim_win_get_buf(win), 'buftype') == 'quickfix' then

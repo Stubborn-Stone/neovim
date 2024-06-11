@@ -124,6 +124,7 @@ install_apt() {
     apt-get install -y pipx
     apt-get install -y python3-pip
     apt-get install -y python3-venv
+    apt-get install python3-pynvim
     pipx install pyright || true
     pipx install cmake-language-server || true
     #pipx install pynvim || true
